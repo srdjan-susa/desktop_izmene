@@ -1,0 +1,178 @@
+body {
+  font-family: 'Jura', sans-serif;
+}
+
+.rp_holder{
+  width: 100%;
+  position: relative;
+  overflow: visible;
+  height: 100vh;
+}
+
+ .rp_gallery{
+   width: 60%;
+   height: 60vh;
+   position: absolute;
+   top: 20%;
+   left: 10%;
+   z-index: -1;
+
+   background-size: cover;
+   background-position: left;
+ }
+
+ .animirani_naslov{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   font-size: 85px;
+   line-height: 90px;
+   text-decoration: underline;
+ }
+
+ .cover1{
+  background-image: url('slike/analiza-1.png');
+ }
+
+
+  .cover2{
+   background-image: url('slike/analiza-2.png');
+  }
+
+.amenities{
+    position: absolute;
+    right: 10%;
+    bottom: 25vh;
+}
+
+.opisni_tekst{
+  width: 40%;
+  text-align: right;
+  position: absolute;
+  top: 15vh;
+  right: 10%;
+}
+
+
+ .naslov_pozicioniranje{
+   position: absolute;
+   top: 15vh;
+   left: 5%;
+   text-shadow: 4px 4px 84px rgba(255, 255, 255, 1);
+
+ }
+
+ h2 {
+   font-size: 50px;
+   line-height: 60px;
+   font-weight: 700;
+  font-family: 'Jura', sans-serif;
+ }
+
+ h2 span{
+   font-size: 35px;
+   line-height: 40px;
+ }
+
+ p{
+   font-size: 22px;
+   line-height: 30px;
+   font-weight: 300;
+ }
+
+ .prozor {
+   height: 100vh;
+ }
+
+ .cela_kategorija{
+   width: 100%;
+   height: 100vh;
+   float: left;
+ }
+
+ #ck1 {
+   display: block;
+   opacity: 1;
+ }
+ #ck2 {
+   display: none;
+   opacity: 1;
+ }
+ #ck3 {
+   display: none;
+   opacity: 1;
+ }
+ #ck4 {
+   display: none;
+   opacity: 1;
+ }
+/* KONTROLE */
+
+.kontroler{
+  width: 90%;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  height: 10vh;
+}
+
+.jedan_element_kontrolera{
+  width: 20%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  float:left;
+  position: relative;
+}
+
+.selektor_oblik{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 5px double #afafaf;
+  position: absolute;
+  left: 12.5%;
+  margin-left: -30px;
+}
+
+.animacija{
+  -webkit-animation: okretanje 1s ; /* Safari 4+ */
+  -moz-animation:    okretanje 1s ; /* Fx 5+ */
+  -o-animation:      okretanje 1s ; /* Opera 12+ */
+  animation:         okretanje 1s ; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes okretanje {
+  0%   { opacity: 1; }
+  50%   { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes okretanje {
+  0%   { opacity: 1; }
+  50%   { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+@-o-keyframes okretanje {
+  0%   { opacity: 1; }
+  50%   { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+@keyframes okretanje {
+  0%   { opacity: 1; }
+  50%   { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+
+.naslov_kategorije{
+    text-align: center;
+    float: left;
+    width: 100%;
+    font-family: 'Jura', sans-serif;
+    font-weight: 400;
+    cursor: cell;
+    transition: 0.7s;
+}
+
+.naslov_kategorije:hover {
+  transform: scale(1.1);
+  font-weight: 700;
+}
